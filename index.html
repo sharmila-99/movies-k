@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Paradise</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #363636;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .movie-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 80px auto;
+        }
+        .movie {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        footer {
+            background-color: #363636;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin: 50px auto;
+            max-width: 400px;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        form h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        form input[type="text"],
+        form input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #363636;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">Events</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="movie-container">
+        <div class="movie">
+            <h2>Interstellar</h2>
+            <img src="interstellar.jpg" alt="Interstellar">
+            <p>Interstellar is a 2014 science fiction film directed by Christopher Nolan.</p>
+            <button>Book Tickets</button>
+        </div>
+        <div class="movie">
+            <h2>La La Land</h2>
+            <img src="la_la_land.jpg" alt="La La Land">
+            <p>La La Land is a 2016 American romantic musical film written and directed by Damien Chazelle.</p>
+            <button>Get Tickets</button>
+        </div>
+        <div class="movie">
+            <h2>Le Fabuleux Destin d'Amélie Poulain</h2>
+            <img src="amelie.jpg" alt="Le Fabuleux Destin d'Amélie Poulain">
+            <p>Le Fabuleux Destin d'Amélie Poulain is a 2001 French romantic comedy film directed by Jean-Pierre Jeunet.</p>
+            <button>Réserver des billets</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Movie Paradise. All rights reserved.
+    </footer>
+
+    <form>
+        <h2>Subscribe to Our Newsletter</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</body>
+</html>
